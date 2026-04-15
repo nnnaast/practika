@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Зелёный Пеликан | Фестиваль экологии и городской среды</title>
+    <!-- Helvetica Light + системные аналоги -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F5F5F5;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Helvetica Light', 'Arial', sans-serif;
+            font-weight: 300;
+            color: #575656;
+            line-height: 1.45;
+            scroll-behavior: smooth;
+        }
+
+        /* настройка для ультралегкого начертания */
+        h1, h2, h3, p, a, button, .nav-link, .logo-placeholder, .footer-text {
+            font-weight: 300;
+            letter-spacing: -0.2px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* header */
+        .site-header {
+            padding: 28px 0 20px;
+            border-bottom: 1px solid rgba(87,86,86,0.15);
+            margin-bottom: 48px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-placeholder {
+            background: #FFE17D;
+            width: 72px;
+            height: 72px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 300;
+            color: #575656;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.02);
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.2;
+            color: #575656;
+        }
+        .logo-text span {
+            font-weight: 400;
+            color: #3a3a3a;
+        }
+
+        /* навигация между страницами */
+        .page-nav {
+            display: flex;
+            gap: 32px;
+        }
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #575656;
+            padding-bottom: 6px;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+            font-weight: 300;
+        }
+        .nav-link.active {
+            border-bottom-color: #FFE17D;
+            color: #2c2b2b;
+            font-weight: 400;
+        }
+        .nav-link:hover {
+            border-bottom-color: #FFE17D;
+            color: #2c2b2b;
+        }
+
+        /* общие стили */
+        h1 {
+            font-size: 52px;
+            font-weight: 300;
+            letter-spacing: -1px;
+            color: #2c2b2b;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 24px;
+            color: #3a3a3a;
+            border-left: 4px solid #FFE17D;
+            padding-left: 20px;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: #3f3e3e;
+        }
+        .section {
+            margin-bottom: 80px;
+        }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            margin-top: 24px;
+        }
+        .info-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px 28px;
+            flex: 1 1 260px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 4px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+            border: 1px solid rgba(87,86,86,0.1);
+        }
+        .info-card:hover {
+            transform:
